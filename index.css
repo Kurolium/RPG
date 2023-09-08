@@ -1,0 +1,54 @@
+html {
+    background-color: black;
+}
+
+#map {
+    text-align: center;
+    color: white;
+}
+
+#battle {
+    margin: auto;
+    top: 100px;
+    background-color: black;
+    width: 45%;
+    height: 45%;
+}
+
+#profile {
+    margin-left: 200px;
+    top: 70px;
+    background-color: black;
+    width: 10%;
+    height: 20%;
+}
+
+#command {
+    margin: auto;
+    top: 200;
+    background-color: black;
+    width: 30%;
+    height: 10%;
+}
+
+#Mob {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#setting {
+    text-align: center;
+}
+
+#battle {
+    color: white;
+}
+
+li {
+    color: white;
+    list-style:none
+}
