@@ -5,18 +5,27 @@ html {
 #map {
     text-align: center;
     color: white;
+    font-size: 0;
 }
 
 #battle {
     margin: auto;
     top: 100px;
     background-color: black;
-    width: 45%;
+    width: 35%;
     height: 45%;
 }
 
+#log {
+    margin: auto;
+    top: 400px;
+    background-color: black;
+    width: 50%;
+    height: 20%;
+}
+
 #profile {
-    margin-left: 200px;
+    margin-left: 300px;
     top: 70px;
     background-color: black;
     width: 10%;
@@ -24,11 +33,14 @@ html {
 }
 
 #command {
-    margin: auto;
-    top: 200;
+    margin-left: 740px;
+    top: 70px;
     background-color: black;
-    width: 30%;
-    height: 10%;
+    width: 15%;
+}
+
+dialog {
+    border: 5px solid #ccc;
 }
 
 #Mob {
@@ -51,4 +63,8 @@ h1 {
 li {
     color: white;
     list-style:none
+}
+
+#log_ {
+    color: white;
 }

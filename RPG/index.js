@@ -7,8 +7,12 @@ let map = ""
 let count = 0
 let Name = ""
 let Lv = 1
-let HP,ATK,DEF
+let HP,ATK,DEF,money,exp
 let MP = 0
+let E_HP,E_DEF,E_id,E_ATK,E_money,E_exp
+let log_F,log_S,log_T
+let M_N
+let STARTED = "NO"
 
 const Feeld = {
     "1":"1111111111111221",
@@ -126,13 +130,13 @@ function MAP() {
     
             let pop = document.createElement('img')
             if (p == 4 && q == 6) {
-                pop.setAttribute('src',"C:\\Users\\yoshikaway\\Documents\\Code\\RPG\\Null.png")
+                pop.setAttribute('src',"Null.png")
             }else if (map[i] == "1") {
-                pop.setAttribute('src',"C:\\Users\\yoshikaway\\Documents\\Code\\RPG\\plain.png")
+                pop.setAttribute('src',"plain.png")
             } else if (map[i] == "2") {
-                pop.setAttribute('src',"C:\\Users\\yoshikaway\\Documents\\Code\\RPG\\water.png")
+                pop.setAttribute('src',"water.png")
             } else if (map[i] == "0") {
-                pop.setAttribute('src',"C:\\Users\\yoshikaway\\Documents\\Code\\RPG\\Null.png")
+                pop.setAttribute('src',"Null.png")
             }
             pop.setAttribute('id',`map${i}`)
             pop.style.width = "64px"
@@ -151,7 +155,8 @@ function MAP() {
 document.addEventListener('keypress', keypress_ivent);
 
 function keypress_ivent(e) {
-    if (battle == "No") {
+    console.log(battle)
+    if (battle == "No" && STARTED == "Yes") {
         if (e.key === "s") {
             if (map[71] !== "2" && map[71] !== "0" ) {
                 y--
@@ -193,8 +198,15 @@ function Battle() {
     let Mob = document.createElement('img')
     if ("1" == "1") {
         alert('OK')
-        Mob.setAttribute('src',"C:\\Users\\yoshikaway\\Documents\\Code\\RPG\\Devi.png")
+        Mob.setAttribute('src',"Devi.png")
         Mob.style.width = "256px"
+        E_HP = "5"
+        M_N = "Devi"
+        E_id = "0"
+        E_DEF = "3"
+        E_ATK = "24"
+        E_money = "3"
+        E_exp = "3"
     }
 
     document.getElementById('Mob').appendChild(Mob)
@@ -207,14 +219,166 @@ function Battle() {
     const btl = document.getElementById("battle")
     const prf = document.getElementById("profile")
     const cmd = document.getElementById("command")
+    const log = document.getElementById("log")
+
     btl.show();
     cmd.show()
     prf.show()
+    log.show()
+    log.setAttribute("open", "true");
     btl.setAttribute("open", "true");
     cmd.setAttribute("open", "true");
     prf.setAttribute("open", "true");
-       
+    
+    LOG(`${M_N}が現れた`)
+
 };
+
+function reroad() {
+    document.getElementById('HP').textContent = `HP ${HP}`
+    document.getElementById('MP').textContent = `MP ${MP}`
+    if (HP <= 0) {
+        LOG('死んでしまった')
+        alert('b')
+        const died = document.getElementById("DIED")
+
+        died.show()
+        died.setAttribute("open", "true")
+    }
+
+}
+
+function attack() {
+    if (battle == "Yes") {
+
+        const log = document.getElementById("command")
+        log.removeAttribute('open')
+
+        setTimeout(() => {
+            LOG(`${Name}の攻撃`)
+
+            const random = Math.floor(Math.random() * 255) + 1
+            let damage
+    
+            if (Math.floor(Math.random() * 32) + 1 == "1") {
+                //会心の一撃
+                damage = Math.floor(ATK - ( ATK / 2 * random ) / 256)
+                E_HP = E_HP - damage
+            } else {
+                //通常の一撃
+                damage = Math.floor((random * ( ATK - E_DEF / 2 + 1) / 256 + ATK - E_DEF / 2 ) / 4)
+                E_HP = E_HP - damage            
+            }
+    
+            setTimeout(() => {
+                LOG(`${damage}のダメージ`)
+                console.log(E_HP)
+                
+                E_Turn()   
+            }, 500);
+        }, 500);
+
+    }
+}
+
+
+function E_Turn() {
+    if (E_HP <= "0") {
+        //撃破
+        LOG(`${M_N}を倒した`)
+        setTimeout(() => {
+
+            LOG(`${E_money}のお金を手に入れた`)
+            setTimeout(() => {
+                LOG(`${E_exp}の経験値を手に入れた`)
+
+                if (exp >= "1") {
+
+                }
+                battle = "No"
+                money += E_money
+                exp += E_exp
+        
+        
+                setTimeout(() => {
+                    document.getElementById('a').textContent = ""
+                    document.getElementById('b').textContent = ""
+                    document.getElementById('c').textContent = ""
+                    document.getElementById('d').textContent = ""
+        
+                    let log = document.getElementById("log")
+                    log.removeAttribute('open')
+                    log = document.getElementById("command")
+                    log.removeAttribute('open')
+                    log = document.getElementById("profile")
+                    log.removeAttribute('open')
+                    log = document.getElementById("battle")
+                    log.removeAttribute('open')
+                }, 2000);
+            }, 500);
+        }, 500);
+
+    } else {
+
+        let damage
+        const random = Math.floor(Math.random() * 255) + 1
+
+        setTimeout(() => {
+            LOG(`${M_N}の攻撃`)
+
+            if (E_id == "0") {
+                damage = Math.floor((random * ( E_ATK - DEF / 2 + 1) / 256 + E_ATK - DEF / 2 ) / 4)
+                setTimeout(() => {
+                    LOG(`${M_N}はフォークを投げてきた`)
+                    if (damage <= "0") {
+                        setTimeout(() => {
+                            LOG(`${Name}は攻撃をはじいた`)
+                        }, 500);
+                    } else {
+                        HP = HP - damage
+                        setTimeout(() => {
+                            LOG(`${Name}は${damage}のダメージを受けた`)                            
+                        }, 500);
+                    }
+
+                    if (HP > 0) {
+                        setTimeout(() => {
+                            LOG('どうする？')
+                            const log = document.getElementById("command")
+                            log.setAttribute("open", "true");
+
+                            setTimeout(() => {
+                                reroad()
+
+                            }, 500);
+                        }, 500);
+                    }
+                }, 500);
+    
+            }
+        }, 500);
+    }
+}
+
+
+function LOG(a) {
+
+    log_F = document.getElementById('a').textContent
+    log_S = document.getElementById('b').textContent
+    log_T = document.getElementById('c').textContent
+    
+    const first = log_T
+    const second = log_S
+    const third = log_F
+    const forth = a
+
+    document.getElementById('a').textContent = forth
+    document.getElementById('b').textContent = third
+    document.getElementById('c').textContent = second
+    document.getElementById('d').textContent = first
+
+}
+
 
 
 function edit(e) {
@@ -224,6 +388,8 @@ function edit(e) {
         count++
     }
 }
+
+
 
 function some(e) {
     if (e == "1") {
@@ -241,6 +407,7 @@ function some(e) {
 
         };
 
+        STARTED = "Yes"
         document.getElementById('setting').remove()
         HP = Math.floor(Math.random() * 5) + 5
         ATK = Math.floor(Math.random() * 5) + 5
@@ -248,4 +415,8 @@ function some(e) {
         MAP()
     }
 
+}
+
+function die() {
+    location.reload()   
 }

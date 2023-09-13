@@ -8,28 +8,51 @@
 </head>
 <body>
 
-    <dialog id="battle">
+    <div id="DIALOG">
+        <dialog id="battle">
         
-        <div id="Mob"></div>
+            <div id="Mob"></div>
+    
+        </dialog>   
+    
+    
+        <dialog id="profile">
+            <ul>
+                <li id="name"></li>
+                <li id="Lv"></li>
+                <li id="HP"></li>
+                <li id="MP"></li>
+            </ul>
+        </dialog>
+    
+    
+        <dialog id="command">
+            <div class="command">
+                <button onclick="attack()">たたかう</button>
+                <button onclick="away()">まほう</button>
+                <button>どうぐ</button>
+                <button>にげる</button>
+            </div>
+        </dialog>
+    
+        <dialog id="log">
+            <div id="log_">
+                <p id="a"></p>
+                <p id="b"></p>
+                <p id="c"></p>
+                <p id="d"></p>
+            </div>
+        </dialog>
 
-    </dialog>   
+        <dialog id="DIED">
+            <div>
+                <p>あなたは死んでしまった</p>
+                <br>
+                <button onclick="die()"></button>
+            </div>
+        </dialog>
+    </div>
 
-    <dialog id="profile">
-        <ul>
-            <li id="name"></li>
-            <li id="Lv"></li>
-            <li id="HP"></li>
-            <li id="MP"></li>
-        </ul>
-    </dialog>
-
-    <dialog id="command">
-        <button>たたかう</button>
-        <button>まほう</button>
-        <br>
-        <button>どうぐ</button>
-        <button>にげる</button>
-    </dialog>
 
     <div id="setting"></div>
     <div id="map"></div>
