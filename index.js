@@ -158,7 +158,7 @@ const cave = {
 
 const l_D1 = {
     "1":"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
-    "2":"1132111111111111111111111111111111111122222222222222222222222222211111111111111111111111111111111111111111111111111111111111111111111111111111",
+    "2":"1131111111111111111111111111111111111122222222222222222222222222211111111111111111111111111111111111111111111111111111111111111111111111111111",
     "3":"1122111111111111111111111111122111111122222222222222222222222222211112222221111111111111111111111111111111111111111111111111111111111111111111",
     "4":"1122111111111111111111111111122111111122111111111111111111111112211112222222222222222221111111111111111111111111111111111111111111111111111111",
     "5":"1122111111111111111111111111122111111122111111111111111111111112211112222222222222222221111111111111111111111111111111111111111111111111111111",
@@ -198,7 +198,7 @@ const l_D1 = {
 
 const l_D2 = {
     "1":"11111111111111111111111111111111111111111111",
-    "2":"12211111111111111111111111111111111111111111",
+    "2":"15111111111111111111111111111111111111111111",
     "3":"12211111111111111111111111111111111111111111",
     "4":"12211111111111111111111111111111111111111111",
     "5":"12211111111111111111111111111111111111111111",
@@ -239,7 +239,7 @@ const l_D2 = {
 
 const l_D3 = {
     "1":"1111111111111",
-    "2":"1122222222211",
+    "2":"1122224222211",
     "3":"1122222222211",
     "4":"1122222222211",
     "5":"1122222222211",
@@ -445,6 +445,8 @@ function MAP() {
                     pop.setAttribute('src',"Null.png")
                 } else if (map[i] == "4") {
                     pop.setAttribute('src',"upstair.png")
+                } else if (map[i] == "5") {
+                    pop.setAttribute('src',"upstair.png")
                 }
             }
 
@@ -480,9 +482,9 @@ function keypress_ivent(e) {
                 y--
             } else if (where == l_D2 && map[71] !== "1") {
                 y--
+            } else if (where == l_D3 && map[71] !== "1") {
+                y--
             }
-
-            console.log(map[71])
 
 
             if (where == town && map[71] == "4") {
@@ -517,6 +519,20 @@ function keypress_ivent(e) {
                 where = l_D3
                 x = 0
                 y = -4
+            } else if (where == l_D2 && map[71] == "5") {
+                where = l_D1
+                x = -4
+                y = 3
+            } else if (where == l_D3 && map[71] == "3") {
+                where = l_D2
+                x = -5
+                y = 3
+            } else if (where == l_D3 && map[71] == "3") {
+                where = l_D2
+                x = -5
+                y = 3
+            } else if (where == l_D3 && map[71] == "4") {
+                Battle("65535")
             }
 
         } else if (e.key === "w") {
@@ -531,6 +547,8 @@ function keypress_ivent(e) {
             } else if (where == l_D1 && map[45] !== "1") {
                 y++
             } else if (where == l_D2 && map[45] !== "1") {
+                y++
+            } else if (where == l_D3 && map[45] !== "1") {
                 y++
             }
 
@@ -572,6 +590,12 @@ function keypress_ivent(e) {
                 where = l_D3
                 x = 0
                 y = -4
+            } else if (where == l_D2 && map[45] == "5") {
+                where = l_D1
+                x = -4
+                y = 3
+            } else if (where == l_D3 && map[45] == "4") {
+                Battle("65535")
             }
 
 
@@ -587,6 +611,8 @@ function keypress_ivent(e) {
             } else if (where == l_D1 && map[57] !== "1") {
                 x--
             } else if (where == l_D2 && map[57] !== "1") {
+                x--
+            } else if (where == l_D3 && map[57] !== "1") {
                 x--
             }
 
@@ -620,6 +646,12 @@ function keypress_ivent(e) {
                 where = l_D3
                 x = 0
                 y = -4
+            } else if (where == l_D3 && map[45] == "4") {
+                Battle(65535)
+            } else if (where == l_D2 && map[45] == "5") {
+                where = l_D1
+                x = -4
+                y = 3
             }
             
 
@@ -635,6 +667,8 @@ function keypress_ivent(e) {
             } else if (where == l_D1 && map[59] !== "1") {
                 x++
             } else if (where == l_D2 && map[59] !== "1") {
+                x++
+            } else if (where == l_D3 && map[59] !== "1") {
                 x++
             }
 
@@ -672,6 +706,12 @@ function keypress_ivent(e) {
                 where = l_D3
                 x = 0
                 y = -4
+            } else if (where == l_D3 && map[59] == "4") {
+                Battle(65535)
+            } else if (where == l_D2 && map[59] == "5") {
+                where = l_D1
+                x = -4
+                y = 3
             }
 
 
@@ -778,11 +818,24 @@ function cancel() {
     item.removeAttribute('open')
 }
 
-function Battle() {
+function Battle(a) {
     battle = "Yes"
     let Mob = document.createElement('img')
-    if ("1" == "1") {
-        alert('OK')
+    if (a == "65535") {
+
+        Mob.setAttribute('src',"Devi.png")
+        Mob.style.width = "256px"
+        E_HP = "600"
+        M_N = "Devi"
+        E_id = "40"
+        E_DEF = "200"
+        E_ATK = "500"
+        E_money = "123500"
+        E_exp = "500000"
+        E_Lv = 10000000000000000000000000
+
+    } else if ("1"=="1") {
+
         Mob.setAttribute('src',"Devi.png")
         Mob.style.width = "256px"
         E_HP = "5"
@@ -823,12 +876,16 @@ function Battle() {
 function reload() {
     document.getElementById('HP').textContent = `HP ${HP}`
     document.getElementById('MP').textContent = `MP ${MP}`
+    alert
     if (HP <= 0) {
         LOG('死んでしまった')
-        const died = document.getElementById("died")
+        setTimeout(() => {
+            const died = document.getElementById("died")
 
-        died.show()
-        died.setAttribute("open", "true")
+            died.show()
+            died.setAttribute("open", "true")            
+        }, 500);
+
     }
 
 }
@@ -889,13 +946,23 @@ function attack() {
                 damage = Math.floor((random * ( ATK - E_DEF / 2 + 1) / 256 + ATK - E_DEF / 2 ) / 4)
                 E_HP = E_HP - damage            
             }
-    
-            setTimeout(() => {
-                LOG(`${damage}のダメージ`)
-                console.log(E_HP)
-                
-                E_Turn()   
-            }, 500);
+
+            if (damage < 0) {
+                setTimeout(() => {
+                    LOG(`ダメージを与えられなかった`)
+                    console.log(E_HP)
+                    
+                    E_Turn()   
+                }, 500);
+            } else {
+                setTimeout(() => {
+                    LOG(`${damage}のダメージ`)
+                    console.log(E_HP)
+                    
+                    E_Turn()   
+                }, 500);
+            }
+
         }, 500);
 
     }
@@ -987,6 +1054,8 @@ function E_Turn() {
                             }, 2000);
                         }, 500);
                         
+                    } else if (exp >= "20" && Lv == "2") {
+
                     } else {
                         battle = "No"
                         money += E_money
@@ -1020,6 +1089,40 @@ function E_Turn() {
             LOG(`${M_N}の攻撃`)
 
             if (E_id == "0") {
+                damage = Math.floor((random * ( E_ATK - DEF / 2 + 1) / 256 + E_ATK - DEF / 2 ) / 4)
+                setTimeout(() => {
+                    LOG(`${M_N}はフォークを投げてきた`)
+                    if (damage <= "0") {
+                        setTimeout(() => {
+                            LOG(`${Name}は攻撃をはじいた`)
+                        }, 500);
+                    } else {
+                        HP = HP - damage
+                        setTimeout(() => {
+                            LOG(`${Name}は${damage}のダメージを受けた`)                            
+                        }, 500);
+                    }
+
+                    if (HP > 0) {
+                        setTimeout(() => {
+                            LOG('どうする？')
+                            const log = document.getElementById("command")
+                            log.setAttribute("open", "true");
+
+                            setTimeout(() => {
+                                reload()
+
+                            }, 500);
+                        }, 500);
+                    } else {
+                        setTimeout(() => {
+                            reload()
+
+                        }, 500);
+                    }
+                }, 500);
+    
+            } else if (E_id == "40") {
                 damage = Math.floor((random * ( E_ATK - DEF / 2 + 1) / 256 + E_ATK - DEF / 2 ) / 4)
                 setTimeout(() => {
                     LOG(`${M_N}はフォークを投げてきた`)
@@ -1153,8 +1256,8 @@ function die() {
 }
 
 function D() {
-    x = -4
-    y = 3
-    where = l_D2
+    x = 0
+    y = -4
+    where = l_D3
     MAP()
 }
