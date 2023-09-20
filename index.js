@@ -1055,7 +1055,1279 @@ function E_Turn() {
                         }, 500);
                         
                     } else if (exp >= "20" && Lv == "2") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
 
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    } else if (exp >= "40" && Lv == "3") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "65" && Lv == "4") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "95" && Lv == "5") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "130" && Lv == "6") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "170" && Lv == "7") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "215" && Lv == "8") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "265" && Lv == "9") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "320" && Lv == "10") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "380" && Lv == "11") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "445" && Lv == "12") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "515" && Lv == "13") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "590" && Lv == "14") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "670" && Lv == "15") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "755" && Lv == "16") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "845" && Lv == "17") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "940" && Lv == "18") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1040" && Lv == "19") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1145" && Lv == "20") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1255" && Lv == "21") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1370" && Lv == "21") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1490" && Lv == "23") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1615" && Lv == "24") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1745" && Lv == "25") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "1880" && Lv == "26") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2020" && Lv == "27") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2165" && Lv == "28") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2315" && Lv == "29") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2470" && Lv == "30") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2630" && Lv == "31") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2795" && Lv == "32") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "2965" && Lv == "33") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "3140" && Lv == "34") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "3320" && Lv == "35") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "3505" && Lv == "36") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "3695" && Lv == "37") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "3890" && Lv == "38") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "4090" && Lv == "39") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "4295" && Lv == "40") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "4505" && Lv == "41") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "4720" && Lv == "42") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "4940" && Lv == "43") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "5165" && Lv == "44") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "5395" && Lv == "45") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "5630" && Lv == "46") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "5870" && Lv == "47") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "6115" && Lv == "48") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "6365" && Lv == "49") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
+                    }  else if (exp >= "6620" && Lv == "50") {
+                        Lv++
+                        LvUP()
+                        setTimeout(() => {
+                            LOG(`${Name}はレベルが${Lv}に上がった`)
+
+                            setTimeout(() => {
+                                battle = "No"
+                                money += E_money
+                                exp += E_exp
+            
+                                document.getElementById('a').textContent = ""
+                                document.getElementById('b').textContent = ""
+                                document.getElementById('c').textContent = ""
+                                document.getElementById('d').textContent = ""
+                    
+                                let log = document.getElementById("log")
+                                log.removeAttribute('open')
+                                log = document.getElementById("command")
+                                log.removeAttribute('open')
+                                log = document.getElementById("profile")
+                                log.removeAttribute('open')
+                                log = document.getElementById("battle")
+                                log.removeAttribute('open')
+                            }, 2000);
+                        }, 500);
                     } else {
                         battle = "No"
                         money += E_money
@@ -1089,40 +2361,6 @@ function E_Turn() {
             LOG(`${M_N}の攻撃`)
 
             if (E_id == "0") {
-                damage = Math.floor((random * ( E_ATK - DEF / 2 + 1) / 256 + E_ATK - DEF / 2 ) / 4)
-                setTimeout(() => {
-                    LOG(`${M_N}はフォークを投げてきた`)
-                    if (damage <= "0") {
-                        setTimeout(() => {
-                            LOG(`${Name}は攻撃をはじいた`)
-                        }, 500);
-                    } else {
-                        HP = HP - damage
-                        setTimeout(() => {
-                            LOG(`${Name}は${damage}のダメージを受けた`)                            
-                        }, 500);
-                    }
-
-                    if (HP > 0) {
-                        setTimeout(() => {
-                            LOG('どうする？')
-                            const log = document.getElementById("command")
-                            log.setAttribute("open", "true");
-
-                            setTimeout(() => {
-                                reload()
-
-                            }, 500);
-                        }, 500);
-                    } else {
-                        setTimeout(() => {
-                            reload()
-
-                        }, 500);
-                    }
-                }, 500);
-    
-            } else if (E_id == "40") {
                 damage = Math.floor((random * ( E_ATK - DEF / 2 + 1) / 256 + E_ATK - DEF / 2 ) / 4)
                 setTimeout(() => {
                     LOG(`${M_N}はフォークを投げてきた`)
