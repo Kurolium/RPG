@@ -1,0 +1,95 @@
+html {
+    background-color: black;
+}
+
+#map {
+    text-align: center;
+    color: white;
+    font-size: 0;
+}
+
+#battle {
+    margin: auto;
+    top: 100px;
+    background-color: black;
+    width: 35%;
+    height: 45%;
+}
+
+#log {
+    margin: auto;
+    top: 400px;
+    background-color: black;
+    width: 50%;
+    height: 20%;
+}
+
+#magic {
+    margin-left: 720px;
+    top: 200px;
+    background-color: black;
+    width: 150px;
+}
+
+#profile {
+    margin-left: 300px;
+    top: 70px;
+    background-color: black;
+    width: 10%;
+    height: 20%;
+}
+
+#command {
+    margin-left: 740px;
+    top: 70px;
+    background-color: black;
+    width: 15%;
+}
+
+#died {
+    margin-top: 200px;
+
+}
+
+#item {
+    margin-left: 720px;
+    top: 200px;
+    background-color: black;
+    width: 150px;
+
+}
+
+dialog {
+    border: 5px solid #ccc;
+    background-color: black;
+}
+
+#Mob {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+#setting {
+    text-align: center;
+}
+
+#battle {
+    color: white;
+}
+
+li {
+    color: white;
+    list-style:none
+}
+
+#log_ {
+    color: white;
+}

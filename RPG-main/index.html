@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+</head>
+<body>
+
+    <div id="DIALOG">
+        <dialog id="battle">
+        
+            <div id="Mob"></div>
+    
+        </dialog>   
+    
+    
+        <dialog id="profile">
+            <ul>
+                <li id="name"></li>
+                <li id="Lv"></li>
+                <li id="HP"></li>
+                <li id="MP"></li>
+            </ul>
+        </dialog>
+    
+    
+        <dialog id="command">
+            <div class="command">
+                <button onclick="attack()">たたかう</button>
+                <button onclick="magic()">まほう</button>
+                <br> 
+                <button onclick="item()">どうぐ</button>
+                <button onclick="away()">にげる</button>
+            </div>
+        </dialog>
+    
+        <dialog id="log">
+            <div id="log_">
+                <p id="a"></p>
+                <p id="b"></p>
+                <p id="c"></p>
+                <p id="d"></p>
+            </div>
+        </dialog>
+
+        <dialog id="died">
+            <div>
+                <p>あなたは死んでしまった</p>
+                <br>
+                <button onclick="die()">タイトルに戻る</button>
+            </div>
+        </dialog>
+
+        <dialog id="magic">
+            <div id="Magic"></div>
+            <button id="cancel" onclick="cancel()">とじる</button>
+        </dialog>
+        
+        <dialog id="item">
+            <div id="Item"></div>
+            <button id="cancel" onclick="cancel()">とじる</button>
+        </dialog>
+
+        <dialog id="minimap">
+            <div id="MAPs"></div>
+        </dialog>
+    </div>
+
+
+    <div id="setting"></div>
+    <div id="map"></div>
+
+    <button onclick="start()" id="Start">aaa</button>
+    
+</body>
+<script src="index.js"></script>
+</html>
